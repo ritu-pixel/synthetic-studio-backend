@@ -36,6 +36,7 @@ Flask-JWT-Extended==4.7.1
 fonttools==4.58.1
 fsspec==2025.5.1
 graphviz==0.20.3
+gunicorn==21.2.0
 idna==3.10
 imbalanced-learn==0.13.0
 imblearn==0.0
