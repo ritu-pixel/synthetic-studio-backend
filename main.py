@@ -143,3 +143,7 @@ def balance_data():
     except Exception as e:
         return jsonify({"error": f"An error occurred during balancing: {str(e)}"}), 500
     return jsonify({"synthesized_data": synthesized_data.to_json(orient='records')}), 200
+@app.route('/')
+def home():
+    return jsonify({"message": "Synthetic Studio Backend is running"}), 200
+
