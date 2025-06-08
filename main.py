@@ -9,7 +9,8 @@ import json
 import os
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, origins=["https://frontend-sqai.vercel.app"])
+
 
 app.config['JWT_SECRET_KEY'] = config('JWT_SECRET_KEY', default='secretkey123')
 # app.config['SWAGGER'] = {
